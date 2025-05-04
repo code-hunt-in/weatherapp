@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🌤️ Weather Dashboard</h1>
+        <form method="POST">
+            <input type="text" name="city" placeholder="Enter City" required value="{{ city }}">
+            <button type="submit">Check Weather</button>
+        </form>
+        {% if weather %}
+            <div class="result">
+                <h2>Weather in {{ city.title() }}</h2>
+                <p><strong>Temperature:</strong> {{ weather.temperature }}°C</p>
+                <p><strong>Wind Speed:</strong> {{ weather.windspeed }} km/h</p>
+                <p><strong>Weather Code:</strong> {{ weather.weathercode }}</p>
+            </div>
+        {% elif city %}
+            <p style="color: red;">❗ Could not find weather for "{{ city }}"</p>
+        {% endif %}
+    </div>
+</body>
+</html>
