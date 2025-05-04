@@ -1,4 +1,3 @@
-# weatherapp
 Weather Dashboard (No API Key Required)
 =======================================
 
