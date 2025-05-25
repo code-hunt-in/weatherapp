@@ -37,6 +37,7 @@ How to Run
 1. Clone the Repository
 -----------------------
 git clone https://github.com/code-hunt-in/weatherapp.git
+
 cd weatherapp
 
 2. Install Dependencies
