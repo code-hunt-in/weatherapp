@@ -17,11 +17,17 @@ Project Structure
 ---------------------------------------
 
 weather-dashboard/
+
 ├── app.py                -> Main Flask backend
+
 ├── templates/
+
 │   └── index.html        -> Frontend (Jinja2 template)
+
 ├── static/
+
 │   └── style.css         -> CSS for styling
+
 └── README.txt            -> This file
 
 ---------------------------------------
